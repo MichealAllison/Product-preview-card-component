@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Product Card Main Container -->
+      <div class="c-product-card">
+        <!-- Image half of the card-->
+        <div class="c-product-card__image-half">
+          <!-- images -->
+          <picture>
+            <!-- medium image -->
+            <source
+              srcset="./images/image-product-desktop.jpg"
+              media="(min-width: 40em)"
+            />
+            <!-- smallest image (default) -->
+            <img
+              src="./images/image-product-mobile.jpg"
+              alt="Square shapped perfume bottle with some bright green leafs around"
+              id="product-image"
+            />
+          </picture>
+        </div>
+
+        <!-- Text half of the card-->
+        <div class="c-product-card__text-half">
+          <hgroup>
+            <!-- Ribbon Text -->
+            <p class="ribbon-text">Perfume</p>
+            <!-- Product name -->
+            <h2 class="product-name">Gabrielle Essencce Eau De Parfum</h2>
+          </hgroup>
+
+          <!-- Product Description -->
+          <p class="product-description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+
+          <!-- Prices -->
+          <p class="product-prices">
+            <!-- Current Price -->
+            <span>$149.99</span>
+            <!-- Old Price -->
+            <s>$169.99</s>
+          </p>
+
+          <!-- call-to-action button-->
+          <button class="CTA" type="button">
+            <img src="./images/icon-cart.svg" alt="Icon cart" id="icon-cart" />
+            <span class="CTA-text">Add to Cart</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
